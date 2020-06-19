@@ -1032,7 +1032,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 251274577}
@@ -2324,7 +2324,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 79dccf077cb34cb4db01e87334842004, type: 2}
+      objectReference: {fileID: 2100000, guid: b88e950b850a5554f8931ac8c8bc3541, type: 2}
     - target: {fileID: 6261320967285470191, guid: 0eb0bbfe22eeb604bab314e03cf7efd2,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
