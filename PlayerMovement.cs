@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "e_portal")
         {
-            SceneManager.LoadScene("elavator");
+            SceneManager.LoadScene("elevator");
         }
         else if (collision.gameObject.tag == "e_back")
         {
