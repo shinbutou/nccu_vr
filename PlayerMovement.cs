@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -44,5 +45,25 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime );
         
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "b_portal")
+        {
+            SceneManager.LoadScene("bathroom");
+        }
+        else if (collision.gameObject.tag == "b_back")
+        {
+            SceneManager.LoadScene("classroom");
+        }
+        else if (collision.gameObject.tag == "e_portal")
+        {
+            SceneManager.LoadScene("elavator");
+        }
+        else if (collision.gameObject.tag == "e_back")
+        {
+            SceneManager.LoadScene("classroom");
+        }
     }
 }
